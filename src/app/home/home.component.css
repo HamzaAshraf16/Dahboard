@@ -1,0 +1,67 @@
+.fit{
+    width: 200px;
+    background-color: white;
+}
+.main{
+    background-color: #F9F5F3;
+}
+.main-color{
+    color: #FF7F5C;
+}
+.sales{
+    color: #00CBC0;
+}
+.title-color{
+    color: #3D5161;
+font: normal normal bold 20px/24px ;
+letter-spacing: 0px;
+opacity: 1;
+}
+.nav-link{
+    color: #3D5161;
+
+}
+.nav-pills{
+    background-color: white;
+    width: fit-content;
+
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color:#FF7F5C ;
+    border-radius:20px;
+}
+.point{
+    top: 50%;
+    left: -15px;
+    width: 10px;
+    height: 10px;
+    background: #FF7F5C 0% 0% no-repeat padding-box;
+    opacity: 1;
+    }
+.title-list{
+width: fit-content;
+text-align: left;
+letter-spacing: 1.8px;
+color: #3D5161;
+text-transform: uppercase;
+opacity: 1;
+ }
+p{
+        margin-bottom: 0;
+}
+.nav-link .active a{
+    color: #FF7F5C;
+}
+ a:hover{
+color: #FF7F5C;
+}
+.image{
+    width: 50px;
+    height: 50px;
+}
+.progress, .progress-stacked{
+    background-color: #F4DBD4;
+}
+.mute{
+    color: #B9CDE2;
+}

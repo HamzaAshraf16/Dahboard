@@ -1,0 +1,480 @@
+<section class="main ms-5 py-5 px-5">
+    <div class="container me-1">
+        <div class="row">
+            <div class="col-md-8">
+                    <div class="container ms-3">
+                        <div class="row gap-3">
+                            <div class="col-md-2 border rounded-5 py-5 fit">
+                                <P class="fs-3 mb-0">71,028<span> EGP</span></P>
+                                <p class=" ">Total Value</p>
+                                <span class="main-color"><i class="fa-solid fa-caret-up"></i> 2 %</span>
+                            </div>
+                            <div class="col-md-2 border rounded-5 py-5 fit">
+                                <P class="fs-3 mb-0">20,000<span> m<sup>3</sup></span></P>
+                                <p class=" ">Total Sales</p>
+                                <span class="sales"><i class="fa-solid fa-caret-up"></i> 50 m<sup>3</sup></span>
+                            </div>
+                            <div class="col-md-2 border rounded-5 py-5 fit">
+                                <P class="fs-3 mb-0">20,000<span> m<sup>3</sup></span></P>
+                                <p class=" ">Avg Sales</p>
+                                <span class="main-color"><i class="fa-solid fa-caret-up"></i> 50 m<sup>3</sup></span>
+                            </div>
+                            <div class="col-md-2 border rounded-5 py-5 fit">
+                                <P class="fs-3 mb-0">1567<span> EGP</span></P>
+                                <p class="">Total Transaction Count</p>
+                                <span class="sales"><i class="fa-solid fa-caret-up"></i> 20</span>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <ul class="nav nav-pills mb-3 ms-auto rounded-5" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link active" id="pills-GRAPH-tab" data-bs-toggle="pill" data-bs-target="#pills-GRAPH" type="button" role="tab" aria-controls="pills-GRAPH" aria-selected="true"> <i class="fa-solid fa-chart-simple text-black"></i> GRAPH</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link" id="pills-LIST-tab" data-bs-toggle="pill" data-bs-target="#pills-LIST" type="button" role="tab" aria-controls="pills-LIST" aria-selected="false"> <i class="fa-solid fa-bars-staggered text-black"></i> LIST</button>
+                                </li>
+                              </ul>
+                              <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active ms-3" id="pills-GRAPH" role="tabpanel" aria-labelledby="pills-GRAPH-tab">
+                                    <div class="container bg-white mt-5">
+                                        <div class="mt-5">
+                                            <ul class="nav justify-content-end">
+                                                <li class="nav-item">
+                                                  <a class="nav-link  active" aria-current="page" href="#">SALES</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                  <a class="nav-link" href="#">TRANSACTION</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                  <a class="nav-link" href="#">VALUE</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">COMPRESSION</a>
+                                                  </li>
+                                              </ul>
+
+                                        </div>
+                                        <hr>
+                                        <div class="mt-5">
+                                            <ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'[palettes]='palette'>
+                                                <e-series-collection>
+                                                    <e-series [dataSource]='chartData' type='Column' xName='country' yName='silver' name='Silver'></e-series>
+                                                    <e-series [dataSource]='chartData' type='Column' xName='country' yName='gold' name='Gold' ></e-series>
+                                                    <e-series [dataSource]='chartData' type='Column' xName='country' yName='bronze' name='Bronze' ></e-series>
+                                                </e-series-collection>
+                                            </ejs-chart>
+                                        </div>
+                                    </div>
+                                  
+                                </div>
+                                <div class="tab-pane fade ms-3" id="pills-LIST" role="tabpanel" aria-labelledby="pills-LIST-tab">
+                                    <div class="scroll">
+                                        
+                                        <div class="container bg-white pb-3 mt-3">
+                                            <div class="row me-5 w-100">
+                                                <div class="col-md-12  py-3">
+                                                    <div class="position-relative d-flex justify-content-between">
+                                                        <div class="point rounded-5 position-absolute"></div>
+                                                        <div class="d-flex">
+    
+                                                            <img src="../../assets/images/gas-station-svgrepo-com.png">
+                                                            <h4 class="mb-0 title-list">STATION NAME <br>DUMMY</h4>
+    
+                                                        </div>
+    
+                                                        <div class=""><h1 class="fs-1"><i class="fa-solid fa-ellipsis"></i></h1></div>
+                                                       
+                                                    </div>
+                                                    <hr>
+                                                    </div>
+                                                  </div>
+                                                  <div class="row">
+                                                    <div class="col-md-4  p-0 px-1 ">
+                                                        <div>
+                                                            <div class="d-flex justify-content-between ">
+                                                                <p>Total Sales</p>
+                                                                <p>62,721</p>
+                                                            </div>
+                                                            <div class="d-flex justify-content-between ">
+                                                                <p>Total Value</p>
+                                                                <p>550 <span>EGP</span></p>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="col-md-4 p-0 px-1">
+                                                        <div>
+                                                            <div class="d-flex justify-content-between ">
+                                                                <p>Compression State</p>
+                                                                <p>Compression</p>
+                                                            </div>
+                                                            <div class="d-flex justify-content-between ">
+                                                                <p>Total Transaction Count</p>
+                                                                <p>5161</p>
+                                                            </div>
+                                                        </div>
+                                                       
+                                                    </div>
+    
+                                                    <div class="col-md-4  p-0 px-1">
+                                                        <div>
+                                                            <div class="d-flex justify-content-between ">
+                                                                <p>Max Transaction / hour</p>
+                                                                <p>20</p>
+                                                            </div>
+                                                            <div class="d-flex justify-content-between">
+                                                                <p>Max Transaction Date-Time</p>
+                                                                <p>8-1-2021</p>
+                                                            </div>
+                                                        </div>
+                                                       
+                                                    </div>
+                                                </div>
+                                                  </div>
+    
+                                                  <div class="container bg-white pb-3 mt-3">
+                                                    <div class="row me-5 w-100">
+                                                        <div class="col-md-12  py-3">
+                                                            <div class="position-relative d-flex justify-content-between">
+                                                                <div class="point rounded-5 position-absolute"></div>
+                                                                <div class="d-flex">
+            
+                                                                    <img src="../../assets/images/gas-station-svgrepo-com.png">
+                                                                    <h4 class="mb-0 title-list">STATION NAME <br>DUMMY</h4>
+            
+                                                                </div>
+            
+                                                                <div class=""><h1 class="fs-1"><i class="fa-solid fa-ellipsis"></i></h1></div>
+                                                               
+                                                            </div>
+                                                            <hr>
+                                                            </div>
+                                                          </div>
+                                                          <div class="row">
+                                                            <div class="col-md-4  p-0 px-1">
+                                                                <div>
+                                                                    <div class="d-flex justify-content-between ">
+                                                                        <p>Total Sales</p>
+                                                                        <p>62,721</p>
+                                                                    </div>
+                                                                    <div class="d-flex justify-content-between ">
+                                                                        <p>Total Value</p>
+                                                                        <p>550 <span>EGP</span></p>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                            <div class="col-md-4 p-0 px-1">
+                                                                <div>
+                                                                    <div class="d-flex justify-content-between ">
+                                                                        <p>Compression State</p>
+                                                                        <p>Compression</p>
+                                                                    </div>
+                                                                    <div class="d-flex justify-content-between ">
+                                                                        <p>Total Transaction Count</p>
+                                                                        <p>5161</p>
+                                                                    </div>
+                                                                </div>
+                                                               
+                                                            </div>
+            
+                                                            <div class="col-md-4  p-0 px-1">
+                                                                <div>
+                                                                    <div class="d-flex justify-content-between ">
+                                                                        <p>Max Transaction / hour</p>
+                                                                        <p>20</p>
+                                                                    </div>
+                                                                    <div class="d-flex justify-content-between">
+                                                                        <p>Max Transaction Date-Time</p>
+                                                                        <p>8-1-2021</p>
+                                                                    </div>
+                                                                </div>
+                                                               
+                                                            </div>
+                                                        </div>
+                                                          </div>
+                                                          <div class="container bg-white pb-3 mt-3">
+                                                            <div class="row me-5 w-100">
+                                                                <div class="col-md-12  py-3">
+                                                                    <div class="position-relative d-flex justify-content-between">
+                                                                        <div class="point rounded-5 position-absolute"></div>
+                                                                        <div class="d-flex">
+                    
+                                                                            <img src="../../assets/images/gas-station-svgrepo-com.png">
+                                                                            <h4 class="mb-0 title-list">STATION NAME <br>DUMMY</h4>
+                    
+                                                                        </div>
+                    
+                                                                        <div class=""><h1 class="fs-1"><i class="fa-solid fa-ellipsis"></i></h1></div>
+                                                                       
+                                                                    </div>
+                                                                    <hr>
+                                                                    </div>
+                                                                  </div>
+                                                                  <div class="row">
+                                                                    <div class="col-md-4  p-0 px-1">
+                                                                        <div>
+                                                                            <div class="d-flex justify-content-between ">
+                                                                                <p>Total Sales</p>
+                                                                                <p>62,721</p>
+                                                                            </div>
+                                                                            <div class="d-flex justify-content-between ">
+                                                                                <p>Total Value</p>
+                                                                                <p>550 <span>EGP</span></p>
+                                                                            </div>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+                                                                    <div class="col-md-4 p-0 px-1">
+                                                                        <div>
+                                                                            <div class="d-flex justify-content-between ">
+                                                                                <p>Compression State</p>
+                                                                                <p>Compression</p>
+                                                                            </div>
+                                                                            <div class="d-flex justify-content-between ">
+                                                                                <p>Total Transaction Count</p>
+                                                                                <p>5161</p>
+                                                                            </div>
+                                                                        </div>
+                                                                       
+                                                                    </div>
+                    
+                                                                    <div class="col-md-4  p-0 px-1">
+                                                                        <div>
+                                                                            <div class="d-flex justify-content-between ">
+                                                                                <p>Max Transaction / hour</p>
+                                                                                <p>20</p>
+                                                                            </div>
+                                                                            <div class="d-flex justify-content-between">
+                                                                                <p>Max Transaction Date-Time</p>
+                                                                                <p>8-1-2021</p>
+                                                                            </div>
+                                                                        </div>
+                                                                       
+                                                                    </div>
+                                                                </div>
+                                                                  </div>
+                                                                  <div class="container bg-white pb-3 mt-3">
+                                                                    <div class="row me-5 w-100">
+                                                                        <div class="col-md-12  py-3">
+                                                                            <div class="position-relative d-flex justify-content-between">
+                                                                                <div class="point rounded-5 position-absolute"></div>
+                                                                                <div class="d-flex">
+                            
+                                                                                    <img src="../../assets/images/gas-station-svgrepo-com.png">
+                                                                                    <h4 class="mb-0 title-list">STATION NAME <br>DUMMY</h4>
+                            
+                                                                                </div>
+                            
+                                                                                <div class=""><h1 class="fs-1"><i class="fa-solid fa-ellipsis"></i></h1></div>
+                                                                               
+                                                                            </div>
+                                                                            <hr>
+                                                                            </div>
+                                                                          </div>
+                                                                          <div class="row">
+                                                                            <div class="col-md-4  p-0 px-1">
+                                                                                <div>
+                                                                                    <div class="d-flex justify-content-between ">
+                                                                                        <p>Total Sales</p>
+                                                                                        <p>62,721</p>
+                                                                                    </div>
+                                                                                    <div class="d-flex justify-content-between ">
+                                                                                        <p>Total Value</p>
+                                                                                        <p>550 <span>EGP</span></p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                
+                                                                            </div>
+                                                                            <div class="col-md-4 p-0 px-1">
+                                                                                <div>
+                                                                                    <div class="d-flex justify-content-between ">
+                                                                                        <p>Compression State</p>
+                                                                                        <p>Compression</p>
+                                                                                    </div>
+                                                                                    <div class="d-flex justify-content-between ">
+                                                                                        <p>Total Transaction Count</p>
+                                                                                        <p>5161</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                               
+                                                                            </div>
+                            
+                                                                            <div class="col-md-4  p-0 px-1">
+                                                                                <div>
+                                                                                    <div class="d-flex justify-content-between ">
+                                                                                        <p>Max Transaction / hour</p>
+                                                                                        <p>20</p>
+                                                                                    </div>
+                                                                                    <div class="d-flex justify-content-between">
+                                                                                        <p>Max Transaction Date-Time</p>
+                                                                                        <p>8-1-2021</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                               
+                                                                            </div>
+                                                                        </div>
+                                                                          </div>
+                                                                          <div class="container bg-white pb-3 mt-3">
+                                                                            <div class="row me-5 w-100">
+                                                                                <div class="col-md-12  py-3">
+                                                                                    <div class="position-relative d-flex justify-content-between">
+                                                                                        <div class="point rounded-5 position-absolute"></div>
+                                                                                        <div class="d-flex">
+                                    
+                                                                                            <img src="../../assets/images/gas-station-svgrepo-com.png">
+                                                                                            <h4 class="mb-0 title-list">STATION NAME <br>DUMMY</h4>
+                                    
+                                                                                        </div>
+                                    
+                                                                                        <div class=""><h1 class="fs-1"><i class="fa-solid fa-ellipsis"></i></h1></div>
+                                                                                       
+                                                                                    </div>
+                                                                                    <hr>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                  <div class="row">
+                                                                                    <div class="col-md-4  p-0 px-1">
+                                                                                        <div>
+                                                                                            <div class="d-flex justify-content-between ">
+                                                                                                <p>Total Sales</p>
+                                                                                                <p>62,721</p>
+                                                                                            </div>
+                                                                                            <div class="d-flex justify-content-between ">
+                                                                                                <p>Total Value</p>
+                                                                                                <p>550 <span>EGP</span></p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        
+                                                                                    </div>
+                                                                                    <div class="col-md-4 p-0 px-1">
+                                                                                        <div>
+                                                                                            <div class="d-flex justify-content-between ">
+                                                                                                <p>Compression State</p>
+                                                                                                <p>Compression</p>
+                                                                                            </div>
+                                                                                            <div class="d-flex justify-content-between ">
+                                                                                                <p>Total Transaction Count</p>
+                                                                                                <p>5161</p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                       
+                                                                                    </div>
+                                    
+                                                                                    <div class="col-md-4  p-0 px-1">
+                                                                                        <div>
+                                                                                            <div class="d-flex justify-content-between ">
+                                                                                                <p>Max Transaction / hour</p>
+                                                                                                <p>20</p>
+                                                                                            </div>
+                                                                                            <div class="d-flex justify-content-between">
+                                                                                                <p>Max Transaction Date-Time</p>
+                                                                                                <p>8-1-2021</p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                       
+                                                                                    </div>
+                                                                                </div>
+                                                                                  </div> 
+                                    </div>
+       
+                                </div>
+                                </div>
+                                                
+                                              
+                                                
+                        </div>
+                    </div>
+            </div>
+
+            <div class="col-md-4">
+                <div>
+                    <h2 class="text-center">Hourly Sales</h2>
+                    <div class="d-flex justify-content-center mt-5">
+                        <img src="../../assets/images/rader.png">
+                    </div>
+                    
+                </div>
+
+                <div class="">
+                    <h2 class="mt-5 text-center mb-5"> Sales by Station </h2>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div>
+                            <div class="d-flex align-items-center">
+                                <img src="../../assets/images/gas-station-svgrepo-com.jpg" class="image">
+                                <h4 class="ms-3">Station Name</h4>
+                            </div>
+                            
+                        </div>
+                        
+                        <div>
+                            <h4>62,721  m<sup>3</sup></h4>
+                        </div>
+                    </div>
+                    <div class="progress mt-3">
+                        
+                        
+                        <div class="progress-bar innerDiv flex-row justify-content-between" role="progressbar"
+                          aria-label="Basic example" aria-valuenow="100%" style="width: 40%; background-color: #FF7F5C;" aria-valuemin="0"
+                          aria-valuemax="100">
+                        </div>
+                      </div>
+                </div>
+                <div class="mt-5">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div>
+                            <div class="d-flex align-items-center">
+                                <img src="../../assets/images/gas-station-svgrepo-com.jpg" class="image">
+                                <h4 class="ms-3">Station Name</h4>
+                            </div>
+                            
+                        </div>
+                        
+                        <div>
+                            <h4>62,721  m<sup>3</sup></h4>
+                        </div>
+                    </div>
+                    <div class="progress mt-3">
+                        
+                        
+                        <div class="progress-bar innerDiv flex-row justify-content-between" role="progressbar"
+                          aria-label="Basic example" aria-valuenow="100%" style="width: 40%; background-color: #FF7F5C;" aria-valuemin="0"
+                          aria-valuemax="100">
+                        </div>
+                      </div>
+                </div>
+                <div class="mt-5">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div>
+                            <div class="d-flex align-items-center">
+                                <img src="../../assets/images/gas-station-svgrepo-com.jpg" class="image">
+                                <h4 class="ms-3">Station Name</h4>
+                            </div>
+                            
+                        </div>
+                        
+                        <div>
+                            <h4 class="mute">NM</h4>
+                        </div>
+                    </div>
+                    <div class="progress mt-3">
+                        
+                        
+                        <div class="progress-bar innerDiv flex-row justify-content-between" role="progressbar"
+                          aria-label="Basic example" aria-valuenow="100%" style="width: 0%; " aria-valuemin="0"
+                          aria-valuemax="100"
+                          id="mute">
+                        </div>
+                      </div>
+                </div>
+                
+            </div>
+
+        </div>
+                                
+    </div>
+                        
+                    
+            
+           
+</section>

@@ -1,0 +1,50 @@
+.navbar{
+    padding-left: 110px;
+}
+.point{
+top: 50%;
+left: -15px;
+width: 10px;
+height: 10px;
+background: #FF7F5C 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+.gas{
+    width: 30px;
+    height: 30px;
+}
+.special{
+width: fit-content;
+text-align: left;
+font: normal normal normal 13px/15px Roboto;
+letter-spacing: 0px;
+color: #3D5161;
+}
+.special1{
+    font: normal normal normal 32px/6px Roboto;
+letter-spacing: 0px;
+color: #3D5161;
+}
+.arrow{
+left: 468px;
+width: 20px;
+height: 29px;
+border: 3px solid #3D5161;
+opacity: 1;
+}
+.tabs{
+    margin-right: 100px;
+background: #F9F5F3 0% 0% no-repeat padding-box;
+border-radius: 30px;
+}
+.nav-link{
+    text-align: left;
+    font: normal normal normal 14px/18px Montserrat;
+    letter-spacing: 1.4px;
+    color: #3D5161;
+    text-transform: uppercase;
+}
+.nav-link.active{
+    background: #FF7F5C;
+    border-radius: 30px;
+}
